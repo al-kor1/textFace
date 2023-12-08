@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .text-face {
     width: 100%;
     position: relative;
@@ -21,15 +20,18 @@
 
 .text-face__face {
     background-image: url(/img/face_1.jpg);
+    /* background-image: url(/img/face_2.jpg); */
+    /* background-image: url(/img/face_3.jpg); */
 }
 
 .text-face__text {
     background-image: url(/img/text_black.png);
+    /* background-image: url(/img/text_white.jpg); */
     position: absolute;
     top: 0;
     left: 0;
     mix-blend-mode: multiply;
-    animation: text-face__text-animation 20s infinite;
+    animation: text-face__text-animation 70s infinite;
     background-size: 150% 100%;
 }
 
