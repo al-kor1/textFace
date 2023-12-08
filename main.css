@@ -6,13 +6,12 @@
 
 
 .text-face {
-    position: relative;
     width: 100%;
+    position: relative;
 }
 
 .text-face__face,
 .text-face__text {
-    position: absolute;
     width: 100%;
     height: 100vh;
     background-size: cover;
@@ -25,10 +24,13 @@
 }
 
 .text-face__text {
-    background-image: url(/img/text_white.jpg);
+    background-image: url(/img/text_black.png);
+    position: absolute;
+    top: 0;
+    left: 0;
     mix-blend-mode: multiply;
-    animation: text-face__text-animation 80s infinite;
-    background-size: 200% 100% !important;
+    animation: text-face__text-animation 20s infinite;
+    background-size: 150% 100%;
 }
 
 @keyframes text-face__text-animation {
@@ -37,7 +39,6 @@
     }
 
     50% {
-        background-position: 200% 100%;
+        background-position: 150% 100%;
     }
 }
-
