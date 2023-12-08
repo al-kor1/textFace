@@ -5,22 +5,39 @@
 }
 
 
-.textFace{
+.text-face {
     position: relative;
     width: 100%;
-    height: 100vh;
-    background: #000;
 }
-.textFace__face{
+
+.text-face__face,
+.text-face__text {
     position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
+    background-size: cover;
+    background-position: center;
     object-fit: cover;
 }
-.textFace__text{
-    width: 100%;
-    height: 100vh;
-    mix-blend-mode: multiply;
+
+.text-face__face {
+    background-image: url(/img/face_1.jpg);
 }
+
+.text-face__text {
+    background-image: url(/img/text_white.jpg);
+    mix-blend-mode: multiply;
+    animation: text-face__text-animation 80s infinite;
+    background-size: 200% 100% !important;
+}
+
+@keyframes text-face__text-animation {
+    0%, 100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 200% 100%;
+    }
+}
+
